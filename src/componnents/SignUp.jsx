@@ -5,7 +5,6 @@ import {
   Text,
   FormControl,
   FormLabel,
-  FormErrorMessage,
   FormHelperText,
   Input,
   Button,
@@ -45,8 +44,17 @@ const SignUp = () => {
             mt={'1rem'}
             paddingBottom={{ base: '2rem', md: '30%', lg: '5rem' }}
           >
-            <Flex justifyContent={'space-between'} ml={'1rem'}>
-              <Image src={logo} alt="Logo" w={'1.2rem'} mt={'0.5rem'} />
+            <Flex
+              justifyContent={{ base: 'space-between', md: 'space-between', lg: "right" }}
+              ml={'1rem'}
+            >
+              <Image
+                src={logo}
+                alt="Logo"
+                w={'1.2rem'}
+                mt={'0.5rem'}
+                display={{ base: 'Flex', md: 'Flex', lg: 'none' }}
+              />
               <Flex
                 justifyContent={'right'}
                 gap={'1rem'}
